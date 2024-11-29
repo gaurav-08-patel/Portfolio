@@ -63,13 +63,13 @@ let projects =[
         title:"Stop watch",
         img_src:"Pics/stop watch.png",
         desc:"This project is a simple Stop watch, here you can get exact time upto milisecs.",
-        project_link:"https://color-flipper-nine-delta.vercel.app/",
+        project_link:"https://stop-watch-g.vercel.app/",
     },
     {
         title:"video project",
         img_src:"Pics/video project.png",
         desc:"It is just a simple project where a video is playing in the bcakground, you can play/pause the video if you want. This project also consist of a pre-loader.",
-        project_link:"https://color-flipper-nine-delta.vercel.app/",
+        project_link:"https://video-project-with-pre-loader.vercel.app/",
     },
     {
         title:"scroll project",
@@ -81,7 +81,7 @@ let projects =[
         title:"counter",
         img_src:"Pics/counter.png",
         desc:"This is a very simple counter which I made as a begginer, here you can increase, decrease or clear the counter.",
-        project_link:"https://scroll-project-gaurav.vercel.app/",
+        project_link:"https://counter-nine-dusky.vercel.app/",
     }
 
 
