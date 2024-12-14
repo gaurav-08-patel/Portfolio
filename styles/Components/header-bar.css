@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    user-select: none;
 }
 .header__bar div{
     display: inline-block;
