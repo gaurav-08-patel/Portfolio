@@ -9,12 +9,12 @@
     display: none;
 }
 
-.header__bar{
+/* .header__bar{
     display: block;
     height: var(--size-2xl);
     width: var(--size-2xl);
     color: var(--clr-slate600);
-}
+} */
 
 
 

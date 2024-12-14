@@ -1,0 +1,78 @@
+
+.header__bar{
+    height:auto;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.header__bar div{
+    display: inline-block;
+    background:var(--clr-slate600);
+    border-radius: 10px;
+}
+.header__bar__span1{
+    width: var(--size-2xl);
+    height: 3px;
+}
+.header__bar__span2{
+    width: var(--size-2xl);
+    height: 3px;
+}
+.header__bar__span3{
+    width: var(--size-2xl);
+    height: 3px;
+}
+
+@keyframes animation__for__bar1{
+    to{
+        translate: 0 8px;
+        transform: rotate(45deg);
+    }
+}
+@keyframes animation__for__bar2{
+    to{
+        width: 0;
+        visibility: hidden;
+    }
+}
+@keyframes animation__for__bar3{
+    to{
+        translate: 0 -8px;
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+
+@keyframes animation__for__bar1__reverse{
+    from{
+        translate: 0 8px;
+        transform: rotate(45deg);
+    }
+    to{
+        translate: 0;
+        transform: rotate(0deg);
+    }
+}
+@keyframes animation__for__bar2__reverse{
+    from{
+        width: 0;
+        visibility: hidden;
+    }
+    to{
+        visibility: auto;
+    }
+}
+@keyframes animation__for__bar3__reverse{
+    from{
+        translate: 0 -8px;
+        transform: rotate(-45deg);
+    }
+    to{
+        translate: 0;
+        transform: rotate(0deg);
+    }
+}
