@@ -1,189 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio</title>
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,601,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/modern-normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/Components/header-bar.css">
-    <link rel="stylesheet" href="styles/Components/header.css">
-    <link rel="stylesheet" href="styles/Components/hero.css">
-    <link rel="stylesheet" href="styles/Components/about.css">
-    <link rel="stylesheet" href="styles/Components/featured.css">
-    <link rel="stylesheet" href="styles/Components/project.css">
-    <link rel="stylesheet" href="styles/Components/contact.css">
-    <link rel="stylesheet" href="styles/Components/footer.css">
-    <link rel="stylesheet" href="styles/Components/mobile-nav.css">
-    <link rel="stylesheet" href="styles/utils.css">
-</head>
-<body>
-    <!-- mobile nav -->
-    <div class="mobile-nav">
-        <ul class="mobile-nav__menu">
-            <li>
-                <a href="#about" class="mobile-nav__link">About</a>
-            </li>
-            <li>
-                <a href="#featured" class="mobile-nav__link">Work</a>
-            </li>
-            <li>
-                <a href="#contact" class="mobile-nav__link">Contact</a>
-            </li>
-            <li class="mobile-nav__link__line"></li>
-            <li>
-                <button  id="light-mode-toggle"  class="mobile-nav__sun">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-                      </svg>
-                      
-                </button>
-            </li>
-            <li>
-                <a href="#" class="mobile-nav__btn btn">Resume</a>
-            </li>
-        </ul>
-    </div>
-
-
-
-
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="theme-color" content="#020617" />
+   <title>Gaurav Patel | Developer Portfolio</title>
+   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="styles/modern-normalize.css" />
+   <link rel="stylesheet" href="styles/style.css" />
+   <link rel="stylesheet" href="styles/Components/header.css" />
+   <link rel="stylesheet" href="styles/Components/hero.css" />
+   <link rel="stylesheet" href="styles/Components/about.css" />
+   <link rel="stylesheet" href="styles/Components/skills.css" />
+   <link rel="stylesheet" href="styles/Components/featured.css" />
+   <link rel="stylesheet" href="styles/Components/project.css" />
+   <link rel="stylesheet" href="styles/Components/contact.css" />
+   <link rel="stylesheet" href="styles/Components/footer.css" />
+   <link rel="stylesheet" href="styles/Components/mobile-nav.css" />
+   <link rel="stylesheet" href="styles/utils.css" />
+ </head>
+ <body>
+   <div class="mobile-nav">
+     <ul class="mobile-nav__menu">
+       <li><a href="#about" class="mobile-nav__link">About</a></li>
+       <li><a href="#skills" class="mobile-nav__link">Skills</a></li>
+       <li><a href="#work" class="mobile-nav__link">Work</a></li>
+       <li><a href="#contact" class="mobile-nav__link">Contact</a></li>
+       <li class="mobile-nav__link__line"></li>
+       <li>
+         <button id="light-mode-toggle" class="mobile-nav__sun" aria-label="Toggle light mode">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+           </svg>
+         </button>
+       </li>
+     </ul>
+   </div>
 
    <header class="container header">
-    <nav>
-        <ul class="nav__menu">
-            <li>
-                <a  class="header__link" href="#about">About</a>
-            </li>
-            <li>
-                <a class="header__link" href="#featured">Work</a>
-            </li>
-            <li>
-                <a class="header__link" href="#contact">Contact</a>
-            </li>
-            <li class="header__line"></li>
-            <li>
-                <button id="light-mode-toggle" class="header__sun">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-                      </svg>
-                      
-                </button>
-            </li>
-            <li>
-                <a class="header__resume btn" href="#">Resume</a>
-            </li>
-        </ul>
-        <div class="header__bar">
-            <div class="header__bar__span1"></div>
-            <div class="header__bar__span2"></div>
-            <div class="header__bar__span3"></div>
-        </div>
-    </nav>
+     <nav class="nav">
+       <a href="#top" class="nav__brand">Gaurav Patel</a>
+       <ul class="nav__menu">
+         <li><a class="header__link" href="#about">About</a></li>
+         <li><a class="header__link" href="#skills">Skills</a></li>
+         <li><a class="header__link" href="#work">Work</a></li>
+         <li><a class="header__link" href="#contact">Contact</a></li>
+         <li class="header__line"></li>
+         <li>
+           <button id="light-mode-toggle" class="header__sun" aria-label="Toggle light mode">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+             </svg>
+           </button>
+         </li>
+         <li>
+           <a class="header__resume btn" href="https://github.com/gaurav-08-patel" target="_blank" rel="noreferrer">GitHub</a>
+         </li>
+       </ul>
+
+       <button class="header__bar" type="button" aria-label="Open navigation menu">
+         <span></span>
+         <span></span>
+         <span></span>
+       </button>
+     </nav>
    </header>
-   <main>
-    <section class="hero container">
-        <img class="hero__img" src="Pics/gaurav.jpg" alt="Profile Pic">
-        <h2 class="hero__subtitle">Hi,I'm Gaurav 👋</h1>
-        <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER.</h2>
-        <p class="hero__desc">A passionate <strong>Frontend/Fullstack-Jamstack</strong>   web developer and <strong>UI/UX</strong>  enthusiast specialized in building stunning pixel-perfect interactive websites/applications.</p>
 
-        <a href="#contact" class="hero__btn btn">Reach Out</a>
-    </section>
+   <main id="top">
+     <section class="hero container section">
+       <div class="hero__content">
+         <p class="eyebrow">Frontend developer • full-stack learner • DevOps enthusiast</p>
+         <h1 class="hero__title">I build practical web experiences that are clean, useful, and ready to ship.</h1>
+         <p class="hero__desc">
+           I’m Gaurav Patel, a Computer Science student at Chennai Institute of Technology who enjoys building web applications and exploring how software works from the frontend to the infrastructure behind it. I’m especially interested in frontend and full-stack development, with hands-on experience in React and JavaScript, and I’m also learning backend development, databases, and deployment workflows.
+         </p>
+         <div class="hero__actions">
+           <a href="#work" class="btn">View projects</a>
+           <a href="#contact" class="btn btn--secondary">Let’s talk</a>
+         </div>
+         <ul class="hero__meta" aria-label="Core interests">
+           <li>React</li>
+           <li>JavaScript</li>
+           <li>Node.js</li>
+           <li>Docker</li>
+         </ul>
+       </div>
 
-    <section class="about container section" id="about">
-        <div class="about__content">
-            <h2 class="about__title">About</h2>
-            <p class="about__desc">Hello there ! I'm Gaurav , a <strong>Frontend web developer</strong> . I wake up in the morning , grab a cup of coffee, open up my laptop and build things that live on the web all day, everyday. </p>
-            <p class="about__desc">People who know me say I'm obessed, that's fair , I am very driven and love learning new things.</p>
-            <hr class="about__hr">
-            <h3 class="about__subtitle">Technologies</h3>
+       <div class="hero__visual" aria-label="Profile illustration and contact summary">
+         <div class="hero__image-wrap">
+           <img class="hero__img" src="Pics/gaurav.jpg" alt="Gaurav Patel portrait" />
+         </div>
+         <div class="hero__card">
+           <span class="hero__card-label">Currently learning</span>
+           <strong>Docker • Linux • Nginx • Deployment</strong>
+         </div>
+       </div>
+     </section>
 
-            <div class="about__ul__container">
-                <ul class="about__ul">
-                    <li >HTML</li>
-                    <li >CSS</li>
-                    <li >Vanilla Javascript</li>
-                    <li >ReactJS</li>
-                
-            </ul>
-            <ul class="about__ul">
-                <li >Tailwind CSS</li>
-                <li>Node JS</li>
-                <li>Express JS</li>
-                <li>MongoDB and MySQL</li>
-            </ul>
-            </div>
+     <section class="about container section" id="about">
+       <div class="section-heading">
+         <p class="eyebrow eyebrow--accent">About</p>
+         <h2>Developer with a practical mindset</h2>
+       </div>
 
-            
-        </div>
-        <div class="about__img__container">
-            <img class="about__img" src="Pics/about__img.jpg" alt="">
-        </div>
-    </section>
-    <section  id="featured" class="featured container section">
-        <h3 class="featured__subtitle">Featured Project</h3>
-        <article class="featured__title__wrapper">
-            <h1 class="featured__title">Slaying The Dragon</h1>
-            <a href="#" class="featured__link__svg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
-                  </svg>
-                  
-            </a>
-        </article>
-        <p class="featured__desc">Gillum voluptate tempor cillum culpa cupidatat labore voluptate ullamco
-        voluptate culpa sunt nulla non. Ad cupidatat dolore quis ametpariatur
-        consectetur ullamco. Officia quis id velit duis cupidatat suntdeserunt do
-        aliquip nulla laboris.</p>
-        <div class="featured__info__conatiner">
-            <div>
-                <h1 class="featured__label">Tech Stack</h1>
-                    <ul class="featured__tech__stack">
-                        <li class="featured__info">TailwindCSS</li>
-                        <li class="featured__info">ReactJS</li>
-                        <li class="featured__info">React-hook-form</li>
-                        <li class="featured__info">NextJS</li>
-                        <li class="featured__info">Axios</li>
-                        <li class="featured__info">Supabase</li>
-                        <li class="featured__info">Stripe</li>
-                    </ul>
-                
-            </div>
-            <div>
-                <h1 class="featured__label">Project Type</h1>
-                <p class="featured__info">Fullstack-Jamstack</p>
-            </div>
-            <div>
-                <h1 class="featured__label">Timeline</h1>
-                <p class="featured__info">November 2024 - present</p>
-            </div>
-        </div>
-    </section>
-    <section class="work container section">
-        <h1 class="work__title">My Projects</h1>
-        <p class="work__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione quae iste corporis architecto maiores eveniet dicta obcaecati enim in, impedit, non dolorum fuga optio!</p>
+       <div class="about__grid">
+         <div class="about__content-block">
+           <p>
+             I’m a Computer Science student who enjoys building web applications and constantly learning new technologies. My interest in frontend and full-stack development comes from the mix of design, problem solving, and logic that building real products requires.
+           </p>
+           <p>
+             I have worked with React and JavaScript to build interactive user interfaces, and I enjoy learning how the backend and database pieces connect to make applications feel complete. I also like understanding deployment workflows and infrastructure, which is why I’ve been practicing with Docker, Linux, Nginx, and cloud deployment on virtual machines.
+           </p>
+           <p>
+             I’m motivated by hands-on learning and by improving my understanding of modern web development and DevOps practices while continuing to grow as a developer.
+           </p>
+         </div>
 
-        <div class="work__container">
+         <div class="about__highlights">
+           <div class="about__highlight-item">
+             <span class="about__label">Focus</span>
+             <strong>Frontend & full-stack</strong>
+           </div>
+           <div class="about__highlight-item">
+             <span class="about__label">Stack</span>
+             <strong>React • JavaScript • Node.js</strong>
+           </div>
+           <div class="about__highlight-item">
+             <span class="about__label">Learning</span>
+             <strong>Docker • Linux • Nginx</strong>
+           </div>
+         </div>
+       </div>
+     </section>
 
-        </div>
+     <section class="skills container section" id="skills">
+       <div class="section-heading">
+         <p class="eyebrow eyebrow--accent">Skills</p>
+         <h2>Tools and technologies I work with</h2>
+       </div>
 
-    </section>
-    <section id="contact" class="contact section container">
-        <h1 class="contact__title">Get in contact</h1>
-        <p class="contact__desc">Whether you are starting a project, have business inquries or just want to say hi, my inbox is always open so fell free to ask and will get back to you as soom as possible. </p>
-        <a href="mailto:gauravpatel.nerd@gmail.com" target="_blank" class="btn contact__btn">Reach Out</a>
-    </section>
-   
+       <div class="skills__grid">
+         <article class="skill-group">
+           <h3>Frontend Development</h3>
+           <ul>
+             <li>HTML5</li>
+             <li>CSS3</li>
+             <li>JavaScript</li>
+             <li>React.js</li>
+             <li>Responsive Web Design</li>
+           </ul>
+         </article>
 
+         <article class="skill-group">
+           <h3>Backend Development</h3>
+           <ul>
+             <li>Node.js</li>
+             <li>Express.js</li>
+             <li>REST APIs</li>
+             <li>Socket.IO</li>
+           </ul>
+         </article>
+
+         <article class="skill-group">
+           <h3>Databases</h3>
+           <ul>
+             <li>MongoDB</li>
+             <li>MySQL</li>
+             <li>Redis</li>
+           </ul>
+         </article>
+
+         <article class="skill-group">
+           <h3>DevOps & Infrastructure</h3>
+           <ul>
+             <li>Docker</li>
+             <li>Docker Compose</li>
+             <li>Linux (Ubuntu and Fedora)</li>
+             <li>Nginx</li>
+             <li>Docker Hub</li>
+             <li>GitHub</li>
+             <li>GitHub Actions (learning)</li>
+           </ul>
+         </article>
+
+         <article class="skill-group">
+           <h3>Other Tools</h3>
+           <ul>
+             <li>Git</li>
+             <li>VS Code</li>
+             <li>Vite</li>
+           </ul>
+         </article>
+       </div>
+     </section>
+
+     <section id="featured" class="featured container section">
+       <div class="section-heading">
+         <p class="eyebrow eyebrow--accent">Featured projects</p>
+         <h2>Primary showcases</h2>
+       </div>
+
+       <article class="featured__card">
+         <div class="featured__header">
+           <h3>Link Shortener</h3>
+           <a href="https://github.com/gaurav-08-patel/Link-Shortener" target="_blank" rel="noreferrer" aria-label="View Link Shortener project on GitHub">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+               <path d="M10.5 13.5 13.5 10.5"/>
+               <path d="M8.25 15.75 4.5 19.5"/>
+               <path d="M15.75 8.25 19.5 4.5"/>
+               <path d="M14.5 19h5.5v-5.5"/>
+               <path d="M9.5 5H4a1 1 0 0 0-1 1v5.5"/>
+             </svg>
+           </a>
+         </div>
+
+         <p class="featured__desc">
+           <a href="https://github.com/gaurav-08-patel/Link-Shortener" target="_blank" rel="noreferrer">Link Shortener</a> is a full-stack URL shortening application that lets users create and manage short links with authentication and real-time functionality. It combines user-facing product work with practical deployment learning, including Docker, Redis, Nginx, and multi-container orchestration.
+         </p>
+
+         <div class="featured__info-grid">
+           <div>
+             <h4>Tech stack</h4>
+             <ul class="featured__tech-list">
+               <li>React</li>
+               <li>Node.js</li>
+               <li>Express.js</li>
+               <li>MongoDB</li>
+               <li>Socket.IO</li>
+               <li>Redis</li>
+               <li>Docker</li>
+               <li>Nginx</li>
+             </ul>
+           </div>
+           <div>
+             <h4>DevOps highlights</h4>
+             <ul class="featured__tech-list">
+               <li>Containerized the backend with Docker.</li>
+               <li>Built a multi-container setup with Docker Compose.</li>
+               <li>Configured Nginx as a reverse proxy and load balancer.</li>
+               <li>Worked with multiple backend replicas.</li>
+               <li>Integrated Redis for Socket.IO communication across backend replicas.</li>
+               <li>Configured container health checks and restart policies.</li>
+               <li>Practiced deployment on an Ubuntu virtual machine.</li>
+             </ul>
+           </div>
+         </div>
+       </article>
+
+       <article class="featured__card">
+         <div class="featured__header">
+           <h3>sanity-next-devblog</h3>
+           <a href="https://github.com/gaurav-08-patel/sanity-next-devblog" target="_blank" rel="noreferrer" aria-label="View sanity-next-devblog project on GitHub">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+               <path d="M10.5 13.5 13.5 10.5"/>
+               <path d="M8.25 15.75 4.5 19.5"/>
+               <path d="M15.75 8.25 19.5 4.5"/>
+               <path d="M14.5 19h5.5v-5.5"/>
+               <path d="M9.5 5H4a1 1 0 0 0-1 1v5.5"/>
+             </svg>
+           </a>
+         </div>
+
+         <p class="featured__desc">
+           <a href="https://github.com/gaurav-08-patel/sanity-next-devblog" target="_blank" rel="noreferrer">sanity-next-devblog</a> is a fast, statically generated developer blog built with Next.js, Sanity CMS, Tailwind CSS, and fuzzy search, designed around content publishing, SEO, and clean developer-focused UI.
+         </p>
+
+         <div class="featured__info-grid">
+           <div>
+             <h4>Tech stack</h4>
+             <ul class="featured__tech-list">
+               <li>Next.js</li>
+               <li>Sanity</li>
+               <li>Tailwind CSS</li>
+               <li>SEO</li>
+               <li>Fuse.js</li>
+             </ul>
+           </div>
+           <div>
+             <h4>Key highlights</h4>
+             <ul class="featured__tech-list">
+               <li>Built a content-driven blog using Next.js Pages Router.</li>
+               <li>Integrated Sanity CMS for structured content management.</li>
+               <li>Used Tailwind CSS to keep the UI responsive and clean.</li>
+               <li>Added fuzzy search to improve article discovery.</li>
+               <li>Focused on optimized metadata and SEO-friendly rendering.</li>
+             </ul>
+           </div>
+         </div>
+       </article>
+
+       <article class="featured__card">
+         <div class="featured__header">
+           <h3>LuckyStrike</h3>
+           <a href="https://github.com/gaurav-08-patel/LuckyStrike" target="_blank" rel="noreferrer" aria-label="View LuckyStrike project on GitHub">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+               <path d="M10.5 13.5 13.5 10.5"/>
+               <path d="M8.25 15.75 4.5 19.5"/>
+               <path d="M15.75 8.25 19.5 4.5"/>
+               <path d="M14.5 19h5.5v-5.5"/>
+               <path d="M9.5 5H4a1 1 0 0 0-1 1v5.5"/>
+             </svg>
+           </a>
+         </div>
+
+         <p class="featured__desc">
+           <a href="https://github.com/gaurav-08-patel/LuckyStrike" target="_blank" rel="noreferrer">LuckyStrike</a> is a full-stack TypeScript app with a React frontend and Express + MySQL backend, built to explore end-to-end application flow with authentication, cloud media handling, scheduled jobs, and email automation.
+         </p>
+
+         <div class="featured__info-grid">
+           <div>
+             <h4>Tech stack</h4>
+             <ul class="featured__tech-list">
+               <li>React</li>
+               <li>TypeScript</li>
+               <li>Vite</li>
+               <li>Node.js</li>
+               <li>Express.js</li>
+               <li>MySQL</li>
+               <li>Cloudinary</li>
+               <li>JWT</li>
+             </ul>
+           </div>
+           <div>
+             <h4>Key highlights</h4>
+             <ul class="featured__tech-list">
+               <li>Built a React + TypeScript frontend with Vite.</li>
+               <li>Developed an Express backend with MySQL integration.</li>
+               <li>Added Cloudinary support for media uploads.</li>
+               <li>Implemented JWT-based authentication.</li>
+               <li>Used node-cron for scheduled background tasks.</li>
+               <li>Integrated Nodemailer for email workflows.</li>
+               <li>Included Docker support in the backend setup.</li>
+             </ul>
+           </div>
+         </div>
+       </article>
+     </section>
+
+     <section class="work container section" id="work">
+       <div class="section-heading">
+         <p class="eyebrow eyebrow--accent">Projects</p>
+         <h2>Selected work</h2>
+       </div>
+       <div class="work__container"></div>
+     </section>
+
+     <section id="contact" class="contact section container">
+       <p class="eyebrow eyebrow--accent">Contact</p>
+       <h2 class="contact__title">Let’s build something useful.</h2>
+       <p class="contact__desc">
+         I’m open to learning opportunities, collaborative projects, and frontend or full-stack work where I can contribute and keep improving.
+       </p>
+       <div class="contact__actions">
+         <a href="mailto:gauravpatel.nerd@gmail.com" target="_blank" class="btn">Email me</a>
+         <a href="https://github.com/gaurav-08-patel" target="_blank" rel="noreferrer" class="btn btn--secondary">GitHub</a>
+       </div>
+     </section>
    </main>
+
    <footer class="footer container section">
-    | gaurav  ~ patel |
+     <span>| gaurav ~ patel |</span>
    </footer>
-    <script src="script.js"></script>
-    <script src="mobile-nav.js"></script>
-    <script src="light-mode.js"></script>
-    <script src="header-bar-script.js"></script>
-</body>
+
+   <script src="script.js"></script>
+   <script src="mobile-nav.js"></script>
+   <script src="light-mode.js"></script>
+   <script src="header-bar-script.js"></script>
+ </body>
 </html>
