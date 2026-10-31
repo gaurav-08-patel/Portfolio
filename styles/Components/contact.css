@@ -1,86 +1,35 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-}
-.contact__title{
-    font-size: var(--size-xl);
-    color: var(--clr-light);
-    text-transform: capitalize;
-}
-.contact__desc{
-    color: var(--clr-slate600);
-    font-size: var(--size-xs);
-    max-width: 60ch;
-}
-.contact__btn{
-    font-size: var(--size-xs);
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2rem;
+  padding-block: 2rem 4rem;
 }
 
-/* xs */
-
-@media (min-width:475px){
-    .contact__title{
-        font-size: var(--size-2xl);
-        color: var(--clr-light);
-    }
-    .contact__desc{
-        color: var(--clr-slate600);
-        font-size: var(--size-sm);
-    }
-    .contact__btn{
-        font-size: var(--size-sm);
-    }
+.contact__title {
+  font-size: clamp(var(--size-3xl), 5vw, var(--size-5xl));
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: var(--heading);
 }
-/* small */
 
-@media (min-width:640px){
-
+.contact__desc {
+  max-width: 62ch;
+  font-size: 1rem;
 }
-/* medium */
 
-@media (min-width:768px){
-
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.4rem;
 }
-/* large */
 
-@media (min-width:1024px){
-   
-    .contact__title{
-        font-size: var(--size-3xl);
-        color: var(--clr-light);
-    }
-    .contact__desc{
-        color: var(--clr-slate600);
-        font-size: var(--size-base);
-    }
-    .contact__btn{
-        font-size: var(--size-base);
-    }
-}
-/* xlarge */
-
-@media (min-width:1280px){
-    .contact__title{
-        font-size: var(--size-4xl);
-        color: var(--clr-light);
-    }
-    .contact__desc{
-        color: var(--clr-slate600);
-        font-size: var(--size-lg);
-    }
-    .contact__btn{
-        font-size: var(--size-lg);
-    }
-    .contact{
-        gap: 2rem;
-    }
-}
-/* 2xlarge */
-
-@media (min-width:1536px){
-
+@media (min-width: 768px) {
+  .contact__desc {
+    font-size: 1.05rem;
+  }
 }

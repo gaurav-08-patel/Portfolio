@@ -1,146 +1,91 @@
-.featured{
-    display: flex;
-    flex-direction: column;
-    /* gap: 20px; */
-}
-.featured__subtitle{
-    color: var(--clr-indigo);
-    font-weight: 100;
-    font-size: var(--size-sm);
-}
-.featured__title__wrapper{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.featured__link__svg{
-    display: block;
-    height: var(--size-2xl);
-    width: var(--size-2xl);
-}
-.featured__title{
-    font-size: var(--size-2xl);
-    color: var(--clr-light);
-    text-transform: uppercase;
-}
-.featured__desc{
-    color: var(--clr-slate600);
-    font-size: var(--size-sm);
-    max-width: 60ch;
-    margin: 1rem 0;
-}
-.featured__label{
-    font-size: var(--size-sm);
-    color: var(--clr-light);
-    margin-bottom: 0.25em;
-}
-.featured__tech__stack{
-    list-style: none;
-}
-.featured__info{
-    color:  var(--clr-slate600);
-    font-size: var(--size-sm);
-}
-.featured__info__conatiner{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.featured__info__conatiner div{
-    flex: 1;
-    min-width: 250px;
+.featured {
+  display: grid;
+  gap: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-/* xs */
-
-@media (min-width:475px){
-    .featured__link__svg{
-        height: var(--size-3xl);
-        width: var(--size-3xl);
-    }
+.featured__card {
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.14);
 }
-/* small */
 
-@media (min-width:640px){
-    .featured__desc{
-        font-size: var(--size-sm);
-    }
-    .featured__label{
-        font-size: var(--size-lg);
-    }
-    .featured__info{
-        font-size: var(--size-sm);
-    }
+.featured__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
-/* medium */
 
-@media (min-width:768px){
-    .featured__title{
-        font-size: var(--size-3xl);
-    }
-    .featured__subtitle{
-        font-size: var(--size-base);
-    }
-    .featured__desc{
-        font-size: var(--size-lg);
-    }
-    
+.featured__header h3 {
+  font-size: clamp(var(--size-2xl), 4vw, var(--size-4xl));
+  color: var(--heading);
+  letter-spacing: -0.05em;
 }
-/* large */
 
-@media (min-width:1024px){
-    .featured__title{
-        font-size: var(--size-4xl);
-    }
-    .featured__subtitle{
-        font-size: var(--size-sm);
-    }
-    .featured__desc{
-        font-size: var(--size-lg);
-    }
-    .featured__link__svg{
-        height: var(--size-4xl);
-        width: var(--size-4xl);
-    }
-    .featured__label{
-        font-size: var(--size-xl);
-    }
-    .featured__info{
-        font-size: var(--size-base);
-    }
-    
+.featured__header a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(148, 163, 184, 0.04);
+  color: var(--heading);
 }
-/* xlarge */
 
-@media (min-width:1280px){
-    .featured__title{
-        font-size: var(--size-5xl);
-    }
-    .featured__subtitle{
-        font-size: var(--size-lg);
-    }
-    .featured__link__svg{
-        height: var(--size-5xl);
-        width: var(--size-5xl);
-    }
-    .featured__label{
-        font-size: var(--size-2xl);
-    }
-    .featured__info{
-        font-size: var(--size-xl);
-    }
-   
+.featured__header svg {
+  width: 1.2rem;
+  height: 1.2rem;
 }
-/* 2xlarge */
 
-@media (min-width:1536px){
-    
+.featured__desc {
+  max-width: 68ch;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.featured__info-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.featured__info-grid h4 {
+  color: var(--heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.featured__tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.featured__tech-list li {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(148, 163, 184, 0.04);
+  color: var(--muted);
+  font-size: var(--size-sm);
+}
+
+@media (min-width: 768px) {
+  .featured {
+    gap: 2rem;
+  }
+
+  .featured__card {
+    padding: 2rem;
+  }
+
+  .featured__info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

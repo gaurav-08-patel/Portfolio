@@ -1,46 +1,82 @@
-.header__bar{
-    position: relative;
-    z-index: 9999;
-}
-.mobile-nav{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--clr-dark);
-    z-index: 999;
-    transition: all 0.3s;
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(2, 8, 23, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 30;
+  padding: 2rem 1.5rem;
 }
 
-.mobile-nav__menu{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    flex-direction: column;
+.mobile-nav.is-open {
+  display: flex;
 }
-.mobile-nav__link{
-    text-decoration: none;
-    color: var(--clr-slate600);
-    font-weight: 600;
+
+.mobile-nav__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 20rem);
+  padding: 1.4rem 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  background: rgba(12, 16, 21, 0.86);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.24);
 }
-.mobile-nav__link__line{
-    border: 2px solid var(--clr-slate600);
-    padding-left: 2em;
+
+.mobile-nav__link {
+  color: var(--heading);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
 }
-.mobile-nav__sun{
-    display: block;
-    height: var(--size-2xl);
-    width: var(--size-2xl);
-    color: var(--clr-slate600);
+
+.mobile-nav__link__line {
+  width: 5.5rem;
+  height: 1px;
+  background: var(--line);
 }
-.mobile-nav__link:hover{
-    color: var(--clr-rose);
-    transition: color .3s;
+
+.mobile-nav__sun {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--heading);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.mobile-nav__sun svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+body.light-mode .mobile-nav {
+  background: rgba(244, 245, 247, 0.7);
+}
+
+body.light-mode .mobile-nav__menu {
+  border-color: rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+body.light-mode .mobile-nav__sun {
+  border-color: rgba(15, 23, 42, 0.08);
+  background: rgba(15, 23, 42, 0.03);
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none !important;
+  }
 }
 

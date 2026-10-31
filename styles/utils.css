@@ -31,78 +31,71 @@
 
 
 
-.btn{
-    display: inline-block;
-    background-color: var(--clr-rose);
-    padding: 0.5em 1em;
-    border-radius: 6px;
-    font-weight: 600;
-    letter-spacing: -0.05em;
-    text-decoration: none;
-    color: #f1f5f9;
-    box-shadow: 0px 0px 12px rgb(225, 29, 72), 0px 8px 10px rgba(225, 29, 72, 0.5);
-    text-transform: capitalize;
-}
-.btn:hover{
-    transform: translateY(-3px);
-    transition: all 0.3s;
-    box-shadow: 0px 0px 16px rgb(225, 29, 72), 0px 10px 15px rgba(225, 29, 72, 0.25);
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  color: #0b0f14;
+  background: linear-gradient(180deg, #f4f5f7, #dfe4ea);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 
-.container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-   
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 25px rgba(255, 255, 255, 0.08);
 }
 
-.section{
-    margin-top: 5rem;
+.btn--secondary {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--heading);
+  box-shadow: none;
+  border: 1px solid var(--line);
 }
 
-/* xs */
-
-@media (min-width:475px){
-    .container{
-        max-width: 475px;
-    }
-}
-/* small */
-
-@media (min-width:640px){
-    .container{
-        max-width: 640px;
-    }
-}
-/* medium */
-
-@media (min-width:768px){
-    .container{
-        max-width: 768px;
-    }
-}
-/* large */
-
-@media (min-width:1024px){
-    .container{
-        max-width: 1024px;
-    }
-}
-/* xlarge */
-
-@media (min-width:1280px){
-    .container{
-        max-width: 1280px;
-    }
-}
-/* 2xlarge */
-
-@media (min-width:1536px){
-    .container{
-        max-width: 1536px;
-    }
+.container {
+  width: min(100% - 1.5rem, 1200px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.section {
+  margin-top: 5rem;
+}
 
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--size-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.eyebrow--accent {
+  color: var(--primary);
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  margin-top: 0.6rem;
+  font-size: clamp(var(--size-2xl), 5vw, var(--size-4xl));
+  letter-spacing: -0.05em;
+  color: var(--heading);
+}
+
+@media (min-width: 640px) {
+  .section {
+    margin-top: 6rem;
+  }
+}
