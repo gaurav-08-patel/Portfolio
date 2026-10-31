@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "chat.tools.terminal.autoApprove": {
+    "/^python3 - <<'PY'\nimport json, urllib\\.request\n# fetch structured repo data for project cards\nfor repo in \\['Link-Shortener','sanity-next-devblog','LuckyStrike'\\]:\n    url=f'https://api\\.github\\.com/repos/gaurav-08-patel/\\{repo\\}'\n    req=urllib\\.request\\.Request\\(url, headers=\\{'User-Agent':'Mozilla/5\\.0'\\}\\)\n    with urllib\\.request\\.urlopen\\(req, timeout=30\\) as r:\n        d=json\\.load\\(r\\)\n    print\\(repo, '::', d\\.get\\('description'\\)\\)\nPY$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
 }
